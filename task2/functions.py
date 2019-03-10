@@ -2,9 +2,9 @@
 
 def bad_sum(value1, value2):
     try:
-        if (value1 > 0) or (value2 > 0):
+        if (value1 > 0) and (value2 > 0):
             return value1 + value2
-        elif (value1 < 0) or (value2 < 0):
+        elif (value1 < 0) and (value2 < 0):
             return value1 - value2
         else:
             return 0;
