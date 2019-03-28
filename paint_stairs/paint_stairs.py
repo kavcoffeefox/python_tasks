@@ -6,8 +6,8 @@ except:
 
 tr_rez = ""
 for i in range(num_steps):
-    for j in range(num_steps + 1):
-           tr_rez += " " if j < (num_steps - i) else "#"
+    for j in range(num_steps):
+           tr_rez += " " if j + 1 < (num_steps - i) else "#"
     print(tr_rez)
     tr_rez = ""
 
