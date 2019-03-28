@@ -6,7 +6,7 @@
 #2.Написать функцию, которая принимает два аргумента: строка и булевый флаг case по-умолчанию равный True. Если флаг действителен: возвращаем новую строку, где каждый символ входной приведен к верхнему регистру, иначе - к нижнему
 def upcase(value, case = True):
     try:
-        if type(value) != str:
+        if not isinstance(value, str):
             raise TypeError
 
         if case == True:
@@ -24,5 +24,5 @@ def upcase(value, case = True):
 #The upcase()
 print(upcase("My way!"))
 print(upcase("My way!", False))
-
+print(upcase(123, False))
 #The
