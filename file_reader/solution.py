@@ -1,5 +1,6 @@
 class FileReader:
-    '''This class for read file'''
+    """This class for read file"""
+
     def __init__(self, file_path):
         self._file_path = file_path
 
@@ -9,6 +10,7 @@ class FileReader:
             return fl.read()
         except IOError as err:
             return ""
+
 
 reader = FileReader("example.txt")
 print(reader.read())

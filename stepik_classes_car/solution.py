@@ -1,7 +1,10 @@
+# -*- coding: UTF-8 -*-
 import csv
 import os
 
+
 class CarBase:
+    """This class for read file"""
     def __init__(self, brand, photo_file_name, carrying):
         self.photo_file_name = photo_file_name
         self.car_type = None
